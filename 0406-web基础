@@ -133,10 +133,62 @@ tel:       18028768679
 			404   4开头客户端请求有问题
 			500   5开头服务端有问题
 	b.域名、IP
+		FQDN(完全合格域名)
+		DNS(域名解析服务器)
+		b1.正向解析
+			域名--IP
+			1>ping
+				win+r--cmd--ping www.baidu.com
+			2>nslookup
+				win+r--cmd--nslookup www.baidu.com
+		b2.反向解析
+			IP--域名
+				win+r--cmd--nslookup 14.215.177.39
 	c.端口
+		区分应用层进程的标识
+		apache/nginx/iis  80
+		tomcat            8080
+		oracle            1521
+		mysql             3306
+		查看win下面端口号
+			win+r--cmd--netstat -an 
 	d.虚拟目录
 	e.访问文件
 	f.访问文件使用的参数
+
+5.抓包
+	http://www.polo-cloud.com/
+	a.常见的抓包工具
+		F12
+		httpwatch
+		fiddler
+		wireshark
+	b.抓包实例
+	c.抓包原理
+		中间人
+	d.抓包数据
+		基础数据
+			文件名
+			状态码
+			文件类型
+			参考页面
+			文件大小
+			加载时间
+		请求头
+			请求地址
+			请求方式
+			可以解析的文件类型
+			文件压缩方式
+			语言
+			cookie
+			客户端信息
+		请求体
+		响应头
+			状态码
+			时间
+			服务器软件版本
+		响应体
+
 
 
 
