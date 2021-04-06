@@ -67,7 +67,84 @@ tel:       18028768679
 			移动端  手机  平板   智能终端
 		s:服务器
 
-			
+2.前端和后端
+	a.前端
+		html   标记 静态网页(服务器上和页面上一致) 
+		css    样式表       页面美化
+		js     JavaScript  动态网页(1.动画 2.交互)
+		       jQuery      
+		UI	   用户接口(美工)  
+	b.后端
+		b/s架构后端
+		docker(容器云)
+		b1.操作系统
+			unix      mac  ios
+			linux     redhat 安卓  gentoo
+			windows   
+				桌面  win7  win10  winxp  win8
+				服务器 server 03 08  12  16  
+		b2.web服务器
+			apache     不支持java
+			nginx      轻量级web服务器(反向代理、负载均衡)
+			tomcat     java
+			iis        微软
+		b3.数据库
+			mysql      互联网
+			oracle     中大型
+			sqlserver  传统
+	c.常见搭配
+		操作系统        web服务器       数据库服务器
+		  win             iis            sqlserver
+		                 apache          mysql
+		                 tomcat          mysql/oracle
+		  linux          apache          mysql             （LAMP）
+		                 nginx           mysql              (LNMP)
+		                 tomcat          mysql/oracle
+
+3.访问网站的过程
+	a.打开浏览器，输入www.sina.com.cn
+	b.系统回到hosts文件中搜索是否有www.sina.com.cn对应的IP地址
+	c.如果没有对应IP，数据通过网络传输到DNS(域名解析)服务器中，进行域名解析(域名--IP)
+	d.数据通过网络传输到目标的IP的web服务器中，web服务器对请求进行解析
+	e.web服务器向数据库发送请求，数据库响应
+	f.web服务器整合数据发回给浏览器
+4.URL的组成
+	URL(统一资源定位器)
+	http://sports.sina.com.cn:80/slamdunk/live.shtml?id=2021040711
+	a.协议
+		一组规则规范
+		a1.http协议
+			超文本传输协议:规定了数据先传输什么，后传输什么，怎样传输
+			超文本(声音、图像、视频)[富文本]
+			普通文本
+		a2.http协议的请求
+			get   我要什么，请求的信息显示在URL上，相对不安全
+				https://s.taobao.com/search?q=lv
+				https://s.taobao.com/search?q=zara
+			post  我给什么，请求信息显示在请求体中，相对安全
+		a3.http协议的特点
+			无状态(彼此不记录过去的行为)
+		a4.cookie&session
+			cookie  访问记录、验证信息 定投广告
+			session 验证信息、会话保持 30分钟超时
+		a5.状态码
+			200   2开头请求成功
+			302   3开头移动或者缓存(重定向)
+			404   4开头客户端请求有问题
+			500   5开头服务端有问题
+	b.域名、IP
+	c.端口
+	d.虚拟目录
+	e.访问文件
+	f.访问文件使用的参数
+
+
+
+
+
+
+
+
 	
 
 
